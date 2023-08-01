@@ -1,0 +1,16 @@
+@media (max-width: 1023px) {
+  .page-template-page_template-home .scroll-panel .four-col.single-margin-left, .page-template-page_template-home .scroll-panel .four-col.single-margin-right {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  .page-template-page_template-home .scroll-panel .four-col.single-margin-right, .page-template-page_template-home .scroll-panel .four-col.single-margin-right h2 {
+    text-align: right;
+  }
+  .page-template-page_template-home .scroll-panel .four-col .copy {
+    max-width: 100%;
+  }
+  .page-template-page_template-home .scroll-panel .four-col.single-margin-right .copy {
+    float: right;
+  }
+}
