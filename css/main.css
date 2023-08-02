@@ -600,6 +600,9 @@ body {
   color: #424B5A;
   line-height: 40px;
 }
+.company .content h2 .quote-line {
+  display: block;
+}
 .company .content span.line {
   width: 128px;
   height: 1px;
@@ -618,11 +621,10 @@ body {
 }
 .projects .projects-inner {
   position: relative;
-  height: 535px;
 }
 .projects .projects-inner #counter {
   position: absolute;
-  bottom: 15px;
+  bottom: 25px;
   font-size: 30px;
   left: 45px;
 }
@@ -632,12 +634,12 @@ body {
 }
 .projects .main .owl-nav .owl-prev {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
 }
 .projects .main .owl-nav .owl-next {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 100px;
 }
 .projects .item {
@@ -647,10 +649,10 @@ body {
   text-decoration: none;
 }
 .projects .item .right {
-  width: 800px;
+  width: 58.33333333%;
 }
 .projects .item .left {
-  width: calc(100% - 800px);
+  width: 41.66666667%;
   padding-right: 100px;
 }
 .projects .item .left .icon {
@@ -697,6 +699,9 @@ body {
 }
 .team .item {
   text-decoration: none;
+}
+.team .item .zoom-image img {
+  width: 100%;
 }
 .team .item .icon {
   display: -webkit-box;

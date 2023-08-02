@@ -3,7 +3,6 @@
     padding-left: 20%;
   }
   .team .content {
-    width: 1200px;
     gap: 30px;
     display: -ms-grid;
     display: grid;
@@ -44,7 +43,6 @@
   }
   .projects .projects-inner {
     padding: 0 16px;
-    height: auto;
   }
   .projects .projects-inner #counter {
     display: none;
