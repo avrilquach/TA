@@ -552,8 +552,20 @@ body {
 .ideas .heading {
   text-align: center;
 }
+.ideas .swiper-scrollbar {
+  height: 6px !important;
+  background-color: #F0F0F0 !important;
+}
+.ideas .swiper-scrollbar-drag {
+  background-color: #FF9900 !important;
+  height: 6px !important;
+}
+.ideas .swiper-wrapper {
+  margin-bottom: 3rem;
+}
 .ideas .item {
   text-decoration: none;
+  width: 33.33%;
 }
 .ideas .item .icon {
   display: -webkit-box;
@@ -577,14 +589,6 @@ body {
 }
 .ideas .item h3 svg {
   margin-left: 10px;
-}
-.ideas .mCSB_scrollTools .mCSB_draggerRail {
-  background-color: #F0F0F0 !important;
-  height: 6px !important;
-}
-.ideas .mCSB_scrollTools .mCSB_dragger_bar {
-  height: 6px !important;
-  background-color: #FF9900 !important;
 }
 
 .company {
