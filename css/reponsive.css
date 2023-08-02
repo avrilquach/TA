@@ -1,7 +1,4 @@
 @media (min-width: 1900px) {
-  .projects {
-    padding-left: 20%;
-  }
   .team .content {
     gap: 30px;
     display: -ms-grid;
