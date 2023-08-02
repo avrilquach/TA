@@ -350,6 +350,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.padding4_5_0 {
+  padding: 4.5rem 0;
+}
+
 .padding3_0 {
   padding: 3rem 0;
 }
@@ -412,21 +416,21 @@ body {
   height: 480px;
   overflow: hidden;
 }
-.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active {
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active {
   cursor: pointer;
 }
-.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover::before, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active::before {
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active::before {
   top: 0;
   width: 100%;
 }
-.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover::after, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active::after {
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active::after {
   bottom: 0;
   width: 100%;
 }
-.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover .services-holder::before, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover .services-holder::after, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active .services-holder::before, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active .services-holder::after {
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active .services-holder::before, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active .services-holder::after {
   height: 100%;
 }
-.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover .services-content, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active .services-content {
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active .services-content {
   padding-top: 50px;
   -webkit-transition: padding-top 260ms linear 0ms;
   transition: padding-top 260ms linear 0ms;
