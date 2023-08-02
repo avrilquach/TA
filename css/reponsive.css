@@ -13,6 +13,9 @@
   .page-template-page_template-home .scroll-panel .four-col.single-margin-right .copy {
     float: right;
   }
+  .services .wrapper {
+    display: block;
+  }
   .services .wrapper > h2 {
     position: unset;
     -webkit-transform: rotate(0);

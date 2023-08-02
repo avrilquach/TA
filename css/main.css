@@ -360,6 +360,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .services .wrapper > h2 {
   -webkit-transform: rotate(-90deg);
@@ -375,7 +378,7 @@ body {
   color: white;
   text-transform: uppercase;
   position: relative;
-  top: 70px;
+  top: 125px;
 }
 .services .wrapper > h2 svg {
   margin-left: 10px;
@@ -384,6 +387,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1200px;
 }
 .services .wrapper .services-wrapper .services-column {
   width: 33.33%;
@@ -394,7 +398,7 @@ body {
 .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout {
   padding: 2rem;
   position: relative;
-  height: 380px;
+  height: 480px;
   overflow: hidden;
 }
 .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover {
@@ -412,7 +416,7 @@ body {
   height: 100%;
 }
 .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover .services-content {
-  padding-top: 0px;
+  padding-top: 50px;
   -webkit-transition: padding-top 260ms linear 0ms;
   transition: padding-top 260ms linear 0ms;
 }
@@ -447,7 +451,7 @@ body {
   background-color: #c5984f;
 }
 .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout .services-content {
-  padding-top: 70px;
+  padding-top: 175px;
 }
 .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout .services-content h2 {
   font-size: 25px;
