@@ -410,13 +410,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1200px;
 }
 .services .wrapper .services-wrapper .services-column {
   width: 33.33%;
 }
 .services .wrapper .services-wrapper .services-column .services-column-inner {
-  padding: 0 16px;
+  padding: 0 30px;
 }
 .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout {
   padding: 2rem;
