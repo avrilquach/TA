@@ -13,4 +13,28 @@
   .page-template-page_template-home .scroll-panel .four-col.single-margin-right .copy {
     float: right;
   }
+  .services .wrapper > h2 {
+    position: unset;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .services .wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .services .wrapper .services-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .services .wrapper .services-wrapper .services-column {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 1rem auto;
+  }
+  .services .wrapper .services-wrapper .services-column .services-column-inner {
+    padding: 0;
+  }
 }

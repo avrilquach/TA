@@ -56,6 +56,10 @@ strong {
   position: relative;
 }
 
+.sticky-panel-wrapper.fade-me {
+  opacity: 0;
+}
+
 .sticky-panel {
   height: 100vh;
   left: 0;
@@ -343,4 +347,134 @@ body {
 
 .marginbt2 {
   margin-bottom: 2rem;
+}
+
+.padding3_0 {
+  padding: 3rem 0;
+}
+
+.services {
+  background-color: #2d2d2d;
+}
+.services .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.services .wrapper > h2 {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  font-size: 25px;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  top: 70px;
+}
+.services .wrapper > h2 svg {
+  margin-left: 10px;
+}
+.services .wrapper .services-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.services .wrapper .services-wrapper .services-column {
+  width: 33.33%;
+}
+.services .wrapper .services-wrapper .services-column .services-column-inner {
+  padding: 0 16px;
+}
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout {
+  padding: 2rem;
+  position: relative;
+  height: 380px;
+  overflow: hidden;
+}
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover {
+  cursor: pointer;
+}
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover::before {
+  top: 0;
+  width: 100%;
+}
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover::after {
+  bottom: 0;
+  width: 100%;
+}
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover .services-holder::before, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover .services-holder::after {
+  height: 100%;
+}
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover .services-content {
+  padding-top: 0px;
+  -webkit-transition: padding-top 260ms linear 0ms;
+  transition: padding-top 260ms linear 0ms;
+}
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout::before, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout::after {
+  -webkit-transition: all 260ms linear 0ms;
+  transition: all 260ms linear 0ms;
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  background-color: #c5984f;
+}
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout .services-holder::before {
+  left: 0;
+}
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout .services-holder::after {
+  right: 0;
+}
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout .services-holder::before, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout .services-holder::after {
+  -webkit-transition: all 260ms linear 0ms;
+  transition: all 260ms linear 0ms;
+  content: "";
+  width: 3px;
+  height: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background-color: #c5984f;
+}
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout .services-content {
+  padding-top: 70px;
+}
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout .services-content h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout .services-content p {
+  font-size: 16px;
+  color: white;
+  line-height: 25px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout .services-icon {
+  height: 122px;
+  margin-bottom: 1rem;
+}
+.services .wrapper .services-wrapper .services-column .services-column-inner .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
