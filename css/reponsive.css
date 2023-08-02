@@ -53,8 +53,14 @@
   .projects .item .left {
     padding-right: 0;
   }
+  .ideas .item {
+    width: 50%;
+  }
 }
 @media (max-width: 767px) {
+  .ideas .item {
+    width: 80%;
+  }
   .services .wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -70,5 +76,15 @@
   }
   .services .wrapper .services-wrapper .services-column .services-column-inner {
     padding: 0;
+  }
+  .team .content {
+    display: block;
+  }
+  .team .content .item {
+    width: 100%;
+  }
+  .team .content .item:first-child {
+    margin-bottom: 2rem;
+    display: block;
   }
 }
