@@ -285,7 +285,7 @@ body {
 }
 .btn-primary::before {
   content: "";
-  width: 160px;
+  width: 175px;
   height: 42px;
   border: 1px solid #424B5A;
   position: absolute;
@@ -296,7 +296,7 @@ body {
 .btn-primary span {
   z-index: 1;
   position: relative;
-  width: 160px;
+  width: 175px;
   height: 42px;
   border: 1px solid #424B5A;
   display: -webkit-box;
@@ -364,6 +364,10 @@ body {
 
 .padding3_0 {
   padding: 3rem 0;
+}
+
+.padtop_3_0 {
+  padding-top: 3rem;
 }
 
 .services {
@@ -728,4 +732,87 @@ body {
 }
 .team .item h3 svg {
   margin-left: 10px;
+}
+
+.footer {
+  background-color: #F5F5F5;
+}
+.footer h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #424B5A;
+}
+.footer .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .bottom p {
+  font-size: 14px;
+  color: #424B5A;
+}
+.footer .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .top .left .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .top .left .inner .item {
+  margin-right: 2rem;
+}
+.footer .top .left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .top .left ul li {
+  margin-right: 1rem;
+}
+.footer .top .right .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .top .right .item ul {
+  margin-right: 2rem;
+}
+.footer .top .right .item ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+.footer .top .right .item ul li::before {
+  content: "";
+  width: 23px;
+  height: 1px;
+  background-color: rgba(66, 75, 90, 0.5019607843);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 10px 0 0;
+}
+.footer .top .right .item ul li a {
+  text-decoration: none;
+  color: #424B5A;
+  font-size: 16px;
 }

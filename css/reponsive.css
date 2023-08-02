@@ -56,6 +56,15 @@
   .ideas .item {
     width: 50%;
   }
+  .footer .top {
+    display: block;
+  }
+  .footer .top .left {
+    margin-bottom: 2rem;
+  }
+  .footer .bottom {
+    display: block;
+  }
 }
 @media (max-width: 767px) {
   .ideas .item {
@@ -86,5 +95,11 @@
   .team .content .item:first-child {
     margin-bottom: 2rem;
     display: block;
+  }
+  .footer .top .left .inner {
+    display: block;
+  }
+  .footer .top .left .inner .item:first-child {
+    margin-bottom: 1rem;
   }
 }
