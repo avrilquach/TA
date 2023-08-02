@@ -365,7 +365,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.services .wrapper > h2 {
+.services .wrapper > a {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   display: -webkit-box;
@@ -380,10 +380,10 @@ body {
   text-transform: uppercase;
   position: relative;
   top: 125px;
-}
-.services .wrapper > h2 a {
-  color: white;
   text-decoration: none;
+}
+.services .wrapper > a h2 {
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,7 +391,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.services .wrapper > h2 svg {
+.services .wrapper > a svg {
   margin-left: 10px;
 }
 .services .wrapper .services-wrapper {
@@ -412,21 +412,21 @@ body {
   height: 480px;
   overflow: hidden;
 }
-.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover {
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active {
   cursor: pointer;
 }
-.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover::before {
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover::before, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active::before {
   top: 0;
   width: 100%;
 }
-.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover::after {
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover::after, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active::after {
   bottom: 0;
   width: 100%;
 }
-.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover .services-holder::before, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover .services-holder::after {
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover .services-holder::before, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover .services-holder::after, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active .services-holder::before, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active .services-holder::after {
   height: 100%;
 }
-.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover .services-content {
+.services .wrapper .services-wrapper .services-column .services-column-inner .services-layout:hover .services-content, .services .wrapper .services-wrapper .services-column .services-column-inner .services-layout.active .services-content {
   padding-top: 50px;
   -webkit-transition: padding-top 260ms linear 0ms;
   transition: padding-top 260ms linear 0ms;
@@ -492,4 +492,93 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.heading h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #424B5A;
+}
+.heading p {
+  line-height: 30px;
+  font-size: 16px;
+  color: #424B5A;
+}
+
+.hover-style .zoom-image {
+  overflow: hidden;
+}
+.hover-style .zoom-image img {
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+}
+.hover-style h3 span {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
+  background-image: linear-gradient(#000, #000);
+  background-position: 0 90%;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+.hover-style:hover .zoom-image img {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+.hover-style:hover h3 span {
+  background-size: 100% 1px;
+}
+.hover-style:hover .icon svg {
+  fill: #000;
+}
+
+.ideas {
+  background: white;
+}
+.ideas .heading {
+  text-align: center;
+}
+.ideas .item {
+  text-decoration: none;
+}
+.ideas .item .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ideas .item .icon svg {
+  margin-right: 10px;
+}
+.ideas .item .icon span {
+  font-size: 16px;
+  color: #424B5A;
+}
+.ideas .item h3 span {
+  font-size: 25px;
+  font-weight: bold;
+  color: #424B5A;
+}
+.ideas .item h3 svg {
+  margin-left: 10px;
+}
+.ideas .line {
+  background-color: #f0f0f0;
+  height: 6px;
+  width: 100%;
+  position: relative;
+}
+.ideas .line::before {
+  content: "";
+  position: absolute;
+  left: 33%;
+  width: 33%;
+  height: 6px;
+  top: 0;
+  background-color: #FF9900;
 }

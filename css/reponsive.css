@@ -16,7 +16,7 @@
   .services .wrapper {
     display: block;
   }
-  .services .wrapper > h2 {
+  .services .wrapper > a {
     position: unset;
     -webkit-transform: rotate(0);
             transform: rotate(0);
