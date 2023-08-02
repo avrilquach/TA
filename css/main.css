@@ -216,7 +216,7 @@ a.home-scroll-down svg {
   font-display: swap;
 }
 body {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.4;
