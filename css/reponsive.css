@@ -1,4 +1,21 @@
-@media (max-width: 1023px) {
+@media (min-width: 1900px) {
+  .projects {
+    padding-left: 20%;
+  }
+  .team .content {
+    width: 1200px;
+    gap: 30px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+  }
+  .team .content .item {
+    width: auto;
+  }
+}
+@media (max-width: 1024px) {
   .page-template-page_template-home .scroll-panel .four-col.single-margin-left, .page-template-page_template-home .scroll-panel .four-col.single-margin-right {
     margin-left: 0;
     margin-right: 0;
@@ -21,6 +38,25 @@
     -webkit-transform: rotate(0);
             transform: rotate(0);
     margin-bottom: 1rem;
+  }
+  .projects {
+    padding-left: 0;
+  }
+  .projects .projects-inner {
+    padding: 0 16px;
+    height: auto;
+  }
+  .projects .projects-inner #counter {
+    display: none;
+  }
+  .projects .item {
+    display: block;
+  }
+  .projects .item .left, .projects .item .right {
+    width: 100%;
+  }
+  .projects .item .left {
+    padding-right: 0;
   }
 }
 @media (max-width: 767px) {
