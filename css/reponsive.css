@@ -65,6 +65,11 @@
   .footer .bottom {
     display: block;
   }
+  .banner-ads .wrapper .center {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 @media (max-width: 767px) {
   .ideas .item {
@@ -101,5 +106,11 @@
   }
   .footer .top .left .inner .item:first-child {
     margin-bottom: 1rem;
+  }
+  .copy .slide-button {
+    display: block;
+  }
+  .header {
+    padding-left: 0;
   }
 }
