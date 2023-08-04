@@ -116,6 +116,10 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .news {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 767px) {
   .ideas .item {
@@ -161,5 +165,9 @@
   }
   .note-text .content {
     width: 100%;
+  }
+  .news {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
   }
 }
