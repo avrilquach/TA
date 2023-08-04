@@ -120,6 +120,26 @@
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
+  #open-menu.active {
+    display: block;
+  }
+  #open-menu.active .left {
+    width: 100%;
+    padding-top: 1rem;
+    height: 100%;
+  }
+  #open-menu.active .left .top-menu, #open-menu.active .left .links {
+    padding-left: 1rem;
+  }
+  #open-menu.active .left .bottom .search form {
+    margin: 0 1rem;
+  }
+  #open-menu.active .left .bottom .social ul {
+    padding: 0 1rem;
+  }
+  #open-menu.active .right {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .ideas .item {

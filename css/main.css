@@ -643,6 +643,10 @@ body {
   font-size: 25px;
   font-weight: bold;
   color: #424B5A;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .ideas .item h3 svg {
   margin-left: 10px;
@@ -799,6 +803,9 @@ body {
   -webkit-transition: top 0.3s ease-in-out, background-color 0.2s;
   transition: top 0.3s ease-in-out, background-color 0.2s;
 }
+.header.header-child {
+  top: 50px;
+}
 .header.transition {
   top: -200px;
 }
@@ -946,7 +953,7 @@ body {
   border: none;
   background: transparent;
   outline: none;
-  padding-left: 10%;
+  padding-left: 50px;
 }
 #open-menu .left .bottom .search form input::-webkit-input-placeholder {
   color: #E1E1E1;
