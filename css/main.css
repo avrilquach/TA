@@ -352,11 +352,6 @@ body {
 }
 .btn-primary:hover::before {
   background: #FF9900;
-  border: 1px solid #FF9900;
-}
-.btn-primary:hover span {
-  color: white;
-  border: 1px solid #FF9900;
 }
 .btn-primary.color1:hover::before {
   background: white;
@@ -372,6 +367,9 @@ body {
 .btn-primary.white span {
   border: 1px solid white;
   color: white;
+}
+.btn-primary.white:hover::before {
+  background: #FF9900;
 }
 .btn-primary.white:hover span {
   color: #424B5A;
@@ -1597,6 +1595,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  padding-bottom: 1rem;
 }
 .filter::before {
   content: "";
@@ -1615,8 +1614,15 @@ body {
       flex-wrap: wrap;
 }
 .filter ul.top > li {
-  margin-right: 20px;
+  margin-right: 40px;
   cursor: pointer;
+  width: 180px;
+}
+.filter ul.top > li#filter-4 {
+  width: auto;
+}
+.filter ul.top > li#filter-4 .open {
+  width: auto;
 }
 .filter ul.top > li a {
   background: url("../images/down.svg") no-repeat right center;
@@ -1625,29 +1631,29 @@ body {
   font-weight: bold;
   padding-right: 30px;
 }
-.filter ul.top > li .open {
-  display: none;
-  padding-top: 2rem;
-}
 .filter ul.top > li.active a {
   background: url("../images/up.svg") no-repeat right center;
 }
-.filter ul.top > li.active .open {
+.filter ul.top > li .open {
+  padding-top: 2rem;
+  width: 180px;
+}
+.filter ul.top > li .open .inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.filter ul.top > li.active .open ul {
+.filter ul.top > li .open .inner ul {
   margin-right: 2rem;
 }
-.filter ul.top > li.active .open ul li {
+.filter ul.top > li .open .inner ul li {
   font-size: 16px;
   font-weight: bold;
   color: #424B5A;
   cursor: pointer;
   margin-bottom: 1rem;
 }
-.filter ul.top > li.active .open ul li.active {
+.filter ul.top > li .open .inner ul li.active {
   color: #FF9900;
 }
 .filter .search {

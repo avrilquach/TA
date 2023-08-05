@@ -155,6 +155,9 @@
   .filter ul.top {
     margin-bottom: 1rem;
   }
+  .filter ul.top li.active .open {
+    padding-top: 1rem !important;
+  }
 }
 @media (max-width: 767px) {
   .ideas .item {
