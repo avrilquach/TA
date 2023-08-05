@@ -353,14 +353,6 @@ body {
 .btn-primary:hover::before {
   background: #FF9900;
 }
-.btn-primary.color1:hover::before {
-  background: white;
-  border: 1px solid white;
-}
-.btn-primary.color1:hover span {
-  color: #424B5A;
-  border: 1px solid white;
-}
 .btn-primary.white::before {
   border: 1px solid white;
 }
@@ -370,9 +362,6 @@ body {
 }
 .btn-primary.white:hover::before {
   background: #FF9900;
-}
-.btn-primary.white:hover span {
-  color: #424B5A;
 }
 
 .top-panel-gradient {
