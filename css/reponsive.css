@@ -146,6 +146,15 @@
   .services-page .services-item-1, .services-page .services-item-2 {
     margin-bottom: 3rem;
   }
+  .filter {
+    display: block;
+  }
+  .filter::before {
+    display: none;
+  }
+  .filter ul.top {
+    margin-bottom: 1rem;
+  }
 }
 @media (max-width: 767px) {
   .ideas .item {

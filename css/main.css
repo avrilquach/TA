@@ -351,7 +351,20 @@ body {
   color: #424B5A;
 }
 .btn-primary:hover::before {
+  background: #FF9900;
+  border: 1px solid #FF9900;
+}
+.btn-primary:hover span {
+  color: white;
+  border: 1px solid #FF9900;
+}
+.btn-primary.color1:hover::before {
   background: white;
+  border: 1px solid white;
+}
+.btn-primary.color1:hover span {
+  color: #424B5A;
+  border: 1px solid white;
 }
 .btn-primary.white::before {
   border: 1px solid white;
@@ -962,8 +975,11 @@ body {
   text-decoration: none;
 }
 #open-menu .left .links ul.style_1 li:hover {
-  border-top: 1px solid #424B5A;
-  border-bottom: 1px solid #424B5A;
+  border-top: 1px solid #FF9900;
+  border-bottom: 1px solid #FF9900;
+}
+#open-menu .left .links ul.style_1 li:hover a {
+  color: #FF9900;
 }
 #open-menu .left .links ul.style_2 li {
   border-top: 1px solid transparent;
@@ -975,8 +991,11 @@ body {
   text-decoration: none;
 }
 #open-menu .left .links ul.style_2 li:hover {
-  border-top: 1px solid #424B5A;
-  border-bottom: 1px solid #424B5A;
+  border-top: 1px solid #FF9900;
+  border-bottom: 1px solid #FF9900;
+}
+#open-menu .left .links ul.style_2 li:hover a {
+  color: #FF9900;
 }
 #open-menu .left .bottom {
   position: absolute;
@@ -1032,6 +1051,12 @@ body {
 #open-menu .left .bottom .social ul li {
   margin-right: 2rem;
 }
+#open-menu .left .bottom .social ul li svg {
+  fill: #424B5A;
+}
+#open-menu .left .bottom .social ul li:hover svg {
+  fill: #FF9900;
+}
 #open-menu .right img {
   width: 100%;
   height: 100%;
@@ -1060,6 +1085,35 @@ body {
   font-size: 14px;
   color: #424B5A;
 }
+.footer .bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .bottom ul li {
+  margin-right: 10px;
+}
+.footer .bottom ul li:last-child a::after {
+  display: none;
+}
+.footer .bottom ul li a {
+  font-size: 14px;
+  color: #424B5A;
+  text-decoration: none;
+}
+.footer .bottom ul li a:hover {
+  color: #FF9900;
+}
+.footer .bottom ul li a:hover::before {
+  color: #FF9900;
+}
+.footer .bottom ul li a::after {
+  content: "|";
+  margin-left: 10px;
+}
 .footer .top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1086,6 +1140,12 @@ body {
 }
 .footer .top .left ul li {
   margin-right: 1rem;
+}
+.footer .top .left ul li svg {
+  fill: #424B5A;
+}
+.footer .top .left ul li:hover svg {
+  fill: #FF9900;
 }
 .footer .top .right .item {
   display: -webkit-box;
@@ -1149,6 +1209,12 @@ body {
   position: absolute;
   top: 12px;
   left: 7px;
+}
+.scroll-panel-0 .slide-social ul li svg {
+  fill: white;
+}
+.scroll-panel-0 .slide-social ul li:hover svg {
+  fill: #FF9900;
 }
 .scroll-panel-0 .copy {
   position: absolute;
@@ -1521,4 +1587,104 @@ body {
 }
 .services-page .services-item .btn-primary {
   margin: 0 auto;
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.filter::before {
+  content: "";
+  height: 1px;
+  background: #424B5A;
+  position: absolute;
+  top: 3rem;
+  width: 100%;
+  left: 0;
+}
+.filter ul.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.filter ul.top > li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.filter ul.top > li a {
+  background: url("../images/down.svg") no-repeat right center;
+  font-size: 25px;
+  color: #424B5A;
+  font-weight: bold;
+  padding-right: 30px;
+}
+.filter ul.top > li .open {
+  display: none;
+  padding-top: 2rem;
+}
+.filter ul.top > li.active a {
+  background: url("../images/up.svg") no-repeat right center;
+}
+.filter ul.top > li.active .open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.filter ul.top > li.active .open ul {
+  margin-right: 2rem;
+}
+.filter ul.top > li.active .open ul li {
+  font-size: 16px;
+  font-weight: bold;
+  color: #424B5A;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.filter ul.top > li.active .open ul li.active {
+  color: #FF9900;
+}
+.filter .search {
+  width: 230px;
+  position: relative;
+}
+.filter .search .input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  height: 35px;
+  font-size: 30px;
+  color: #424B5A;
+  font-weight: bold;
+  padding: 0 10px 0 50px;
+}
+.filter .search .input::-webkit-input-placeholder {
+  color: #E1E1E1;
+}
+.filter .search .input::-moz-placeholder {
+  color: #E1E1E1;
+}
+.filter .search .input:-ms-input-placeholder {
+  color: #E1E1E1;
+}
+.filter .search .input::-ms-input-placeholder {
+  color: #E1E1E1;
+}
+.filter .search .input::placeholder {
+  color: #E1E1E1;
+}
+.filter .search .submit {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
 }
