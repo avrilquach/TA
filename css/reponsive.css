@@ -140,6 +140,12 @@
   #open-menu.active .right {
     display: none;
   }
+  .services-page {
+    display: block;
+  }
+  .services-page .services-item-1, .services-page .services-item-2 {
+    margin-bottom: 3rem;
+  }
 }
 @media (max-width: 767px) {
   .ideas .item {
@@ -181,7 +187,7 @@
     display: block;
   }
   .header {
-    padding-left: 0;
+    padding-left: 1rem;
   }
   .note-text .content {
     width: 100%;
@@ -189,5 +195,11 @@
   .news {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
+  }
+  .header.header-child {
+    top: 1rem;
+  }
+  .services-page .services-item {
+    width: 100%;
   }
 }

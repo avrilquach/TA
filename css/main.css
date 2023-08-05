@@ -603,6 +603,36 @@ body {
   fill: #000;
 }
 
+.hover-style-2 .zoom-image {
+  overflow: hidden;
+}
+.hover-style-2 .zoom-image img {
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+}
+.hover-style-2 h3 span {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+  background-image: linear-gradient(#fff, #fff);
+  background-position: 0 90%;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+.hover-style-2:hover .zoom-image img {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+.hover-style-2:hover h3 span {
+  background-size: 100% 1px;
+}
+.hover-style-2:hover .icon svg {
+  fill: #fff;
+}
+
 .ideas {
   background: white;
 }
@@ -643,10 +673,6 @@ body {
   font-size: 25px;
   font-weight: bold;
   color: #424B5A;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
 }
 .ideas .item h3 svg {
   margin-left: 10px;
@@ -682,6 +708,18 @@ body {
 .projects {
   background-color: white;
   padding-left: 5%;
+}
+.projects.projects2 {
+  position: relative;
+}
+.projects.projects2::before {
+  height: 50%;
+  content: "";
+  background: #F5F5F5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 .projects .projects-inner {
   position: relative;
@@ -743,8 +781,15 @@ body {
   margin-left: 10px;
 }
 
+.color-white {
+  color: white !important;
+}
+
 .team {
   background-color: white;
+}
+.team.bg-color-1 {
+  background-color: #2D2D2D;
 }
 .team .content {
   width: 100%;
@@ -1075,10 +1120,10 @@ body {
   font-size: 16px;
 }
 .footer .top .right .item ul li:hover::before {
-  background-color: #FFD685;
+  background-color: #FF9900;
 }
 .footer .top .right .item ul li:hover a {
-  color: #FFD685;
+  color: #FF9900;
 }
 
 .scroll-panel-0 .slide-social {
@@ -1184,6 +1229,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.slider.bg-image {
+  background: url("../images/services.png") no-repeat center center;
+  height: 650px;
 }
 .slider .content {
   width: 685px;
@@ -1409,4 +1458,67 @@ body {
 }
 .news .news-item h3 svg {
   margin-left: 10px;
+}
+
+.services-page {
+  display: -ms-grid;
+  display: grid;
+  gap: 3rem;
+}
+.services-page .services-item-3 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+.services-page .services-item {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.services-page .services-item:hover svg {
+  fill: #FF9900;
+}
+.services-page .services-item:hover svg .spin {
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+.services-page .services-item:hover svg .spin2 {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.services-page .services-item:hover h2, .services-page .services-item:hover p {
+  color: #FF9900;
+}
+.services-page .services-item svg {
+  fill: #424B5A;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.services-page .services-item svg .spin {
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.services-page .services-item svg .spin2 {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.services-page .services-item h2 {
+  color: #424B5A;
+  font-size: 30px;
+  font-weight: bold;
+}
+.services-page .services-item p {
+  color: #424B5A;
+  font-size: 16px;
+}
+.services-page .services-item .btn-primary {
+  margin: 0 auto;
 }
