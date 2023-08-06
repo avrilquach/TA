@@ -148,15 +148,23 @@
   }
   .filter {
     display: block;
+    height: auto !important;
   }
   .filter::before {
     display: none;
   }
   .filter ul.top {
     margin-bottom: 1rem;
+    display: block;
+  }
+  .filter ul.top li .open {
+    display: none !important;
   }
   .filter ul.top li.active .open {
     padding-top: 1rem !important;
+    position: unset;
+    height: auto !important;
+    display: block !important;
   }
 }
 @media (max-width: 767px) {
