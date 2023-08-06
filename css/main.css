@@ -1605,13 +1605,6 @@ body {
 .filter ul.top > li {
   margin-right: 40px;
   cursor: pointer;
-  width: 180px;
-}
-.filter ul.top > li#filter-4 {
-  width: auto;
-}
-.filter ul.top > li#filter-4 .open {
-  width: auto;
 }
 .filter ul.top > li a {
   background: url("../images/down.svg") no-repeat right center;
@@ -1624,7 +1617,8 @@ body {
   background: url("../images/up.svg") no-repeat right center;
 }
 .filter ul.top > li .open {
-  width: 180px;
+  position: absolute;
+  z-index: 100;
 }
 .filter ul.top > li .open .inner {
   display: -webkit-box;
