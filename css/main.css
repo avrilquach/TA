@@ -1624,7 +1624,6 @@ body {
   background: url("../images/up.svg") no-repeat right center;
 }
 .filter ul.top > li .open {
-  padding-top: 2rem;
   width: 180px;
 }
 .filter ul.top > li .open .inner {
