@@ -131,6 +131,11 @@
   #open-menu.active .left .top-menu, #open-menu.active .left .links {
     padding-left: 1rem;
   }
+  #open-menu.active .left .links{
+    display: block;
+    overflow: scroll;
+    height: calc(100vh - 350px);
+  }
   #open-menu.active .left .bottom .search form {
     margin: 0 1rem;
   }
