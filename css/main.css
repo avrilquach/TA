@@ -1676,3 +1676,42 @@ body {
   left: 0;
   cursor: pointer;
 }
+
+.languages {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 60px;
+  padding: 5px 0;
+  top: 80px;
+  right: 100px;
+  border-radius: 30px;
+  z-index: 1000;
+  cursor: pointer;
+}
+.languages .en, .languages .vn {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.languages .en img, .languages .vn img {
+  width: 20px;
+  height: 20px;
+}
+.languages .en span, .languages .vn span {
+  color: white;
+}
+.languages .en.active, .languages .vn.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.languages .en img {
+  margin-left: 5px;
+}
+.languages .vn img {
+  margin-right: 5px;
+}

@@ -40,6 +40,10 @@
 <path d="M0.311 29V0.964H6.632V23.668H17.726V29H0.311ZM32.4081 29.516C24.8401 29.516 19.6801 24.012 19.6801 14.853C19.6801 5.694 24.8401 0.447999 32.4081 0.447999C39.9761 0.447999 45.1361 5.737 45.1361 14.853C45.1361 24.012 39.9761 29.516 32.4081 29.516ZM32.4081 24.055C36.2351 24.055 38.6431 20.486 38.6431 14.853C38.6431 9.263 36.2351 5.909 32.4081 5.909C28.5811 5.909 26.1731 9.263 26.1731 14.853C26.1731 20.486 28.5811 24.055 32.4081 24.055ZM62.7917 29.516C55.0947 29.516 49.0747 24.571 49.0747 15.154C49.0747 5.866 55.2667 0.447999 62.7487 0.447999C66.7907 0.447999 69.7147 2.211 71.5637 4.103L68.2527 8.145C66.8337 6.898 65.3717 5.909 62.9637 5.909C58.6207 5.909 55.5677 9.306 55.5677 14.939C55.5677 20.701 58.1907 24.055 63.4367 24.055C64.5977 24.055 65.7587 23.754 66.4467 23.195V18.379H61.8027V13.219H72.0367V26.119C70.1017 28.011 66.7047 29.516 62.7917 29.516ZM89.2236 29.516C81.6556 29.516 76.4956 24.012 76.4956 14.853C76.4956 5.694 81.6556 0.447999 89.2236 0.447999C96.7916 0.447999 101.952 5.737 101.952 14.853C101.952 24.012 96.7916 29.516 89.2236 29.516ZM89.2236 24.055C93.0506 24.055 95.4586 20.486 95.4586 14.853C95.4586 9.263 93.0506 5.909 89.2236 5.909C85.3966 5.909 82.9886 9.263 82.9886 14.853C82.9886 20.486 85.3966 24.055 89.2236 24.055Z" fill="#424B5A"/>
 </svg></a></div>
     </header>
+    <div class="languages">
+      <div class="en active"><span>EN</span><img src="images/icon-switch-en.png" alt=""></div>
+      <div class="vn"><img src="images/icon-lang-vn.png" alt=""><span>VI</span></div>
+    </div>
     <div id="open-menu">
       <div class="left">
         <div class="top-menu marginbt2">
@@ -563,5 +567,19 @@
     <script type="text/javascript" src="js/wow.js"></script>
     <script type="text/javascript" src="js/swiper.js"></script>
     <script type="text/javascript" src="js/main-dist.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          $(".languages").click(function (e) {
+          if($(".languages .en").hasClass("active")) {
+              $(".languages .en").removeClass("active")
+              $(".languages .vn").addClass("active")
+          }
+          else {
+              $(".languages .en").addClass("active")
+              $(".languages .vn").removeClass("active")
+          }
+          })
+      });
+    </script>
   </body>
 </html>
