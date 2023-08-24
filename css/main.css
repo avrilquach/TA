@@ -1680,8 +1680,7 @@ body {
 .languages {
   position: absolute;
   background: rgba(255, 255, 255, 0.2);
-  width: 60px;
-  padding: 5px 0;
+  padding: 5px 15px;
   top: 80px;
   right: 100px;
   border-radius: 30px;
@@ -1710,8 +1709,8 @@ body {
   display: flex;
 }
 .languages .en img {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .languages .vn img {
-  margin-right: 5px;
+  margin-right: 10px;
 }
