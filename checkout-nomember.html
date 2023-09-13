@@ -154,36 +154,51 @@
                 </li>
             </ul>
         </div>
-        <div class="content">
+        <div class="content padbottom0_3">
             <div class="m-left">
                 <!--Address-->
                 <div class="checkout-item">
     <h2 class="marbt10">Thông tin giao hàng</h2>
-    <p class="marbt25">Bạn có tài khoản không? <a href="signup.html">Đăng nhập</a></p>
-    <div class="form-input marbt25">
-        <label>Họ và tên</label>
-        <input title="username" placeholder="Nhập họ và tên" class="input" type="text" name="username" />
-    </div>
-    <div class="form-input marbt25">
-        <label>Số điện thoại</label>
-        <input title="phone" placeholder="Nhập điện thoại" class="input" type="text" name="phone" />
-    </div>
-    <div class="column">
-        <div class="form-input marbt0" id="address">
-            <label>Địa chỉ</label>
-            <input title="address" placeholder="Nhập địa chỉ" class="input" type="text" name="address" />
+    <div class="address-data">
+        <div class="form-input-radio">
+            <input id="address-default" type="radio" name="address-default" checked="">
+            <div class="item-radio address-item" for="address-default">
+                <span class="title">
+                    <span class="name">Trang Nguyen,<span class="phone">0904567834</span></span>
+                    <p>124/15 Duong So 5, Phường 17, Quận Gò Vấp, Thành Phố Hồ Chí Minh</p>
+                </span>
+                <span class="default">Mặc định</span>
+                <a class="change-address">Thay đổi</a>
+            </div>
         </div>
-        <div class="form-input marbt0" id="district">
-            <label>Quận/huyện</label>
-            <select name="name_district" class="input">
-                <option value="Quận 1">Quận 1</option>
-            </select>
+    </div>
+    <div class="address-form hidden">
+        <p class="marbt25">Bạn có tài khoản không? <a href="signup.html">Đăng nhập</a></p>
+        <div class="form-input marbt25">
+            <label>Họ và tên</label>
+            <input title="username" placeholder="Nhập họ và tên" class="input" type="text" name="username" />
         </div>
-        <div class="form-input marbt0" id="ward">
-            <label>Tỉnh/Thành</label>
-            <select name="name_ward" class="input">
-                <option value="Phường 19">Phường 19</option>
-            </select>
+        <div class="form-input marbt25">
+            <label>Số điện thoại</label>
+            <input title="phone" placeholder="Nhập điện thoại" class="input" type="text" name="phone" />
+        </div>
+        <div class="column">
+            <div class="form-input marbt0" id="address">
+                <label>Địa chỉ</label>
+                <input title="address" placeholder="Nhập địa chỉ" class="input" type="text" name="address" />
+            </div>
+            <div class="form-input marbt0" id="district">
+                <label>Quận/huyện</label>
+                <select name="name_district" class="input">
+                    <option value="Quận 1">Quận 1</option>
+                </select>
+            </div>
+            <div class="form-input marbt0" id="ward">
+                <label>Tỉnh/Thành</label>
+                <select name="name_ward" class="input">
+                    <option value="Phường 19">Phường 19</option>
+                </select>
+            </div>
         </div>
     </div>
 </div>
@@ -459,6 +474,7 @@
     </div>
 </div>
 
+                <button title="add-to-cart" class="submit" type="submit">Đặt hàng</button>
             </div>
         </div>
     </div>
