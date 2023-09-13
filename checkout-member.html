@@ -159,32 +159,16 @@
                 <!--Address-->
                 <div class="checkout-item">
     <h2 class="marbt10">Thông tin giao hàng</h2>
-    <div class="address-form">
-        <p class="marbt25">Bạn có tài khoản không? <a href="signup.html">Đăng nhập</a></p>
-        <div class="form-input marbt25">
-            <label>Họ và tên</label>
-            <input title="username" placeholder="Nhập họ và tên" class="input" type="text" name="username" />
-        </div>
-        <div class="form-input marbt25">
-            <label>Số điện thoại</label>
-            <input title="phone" placeholder="Nhập điện thoại" class="input" type="text" name="phone" />
-        </div>
-        <div class="column">
-            <div class="form-input marbt0" id="address">
-                <label>Địa chỉ</label>
-                <input title="address" placeholder="Nhập địa chỉ" class="input" type="text" name="address" />
-            </div>
-            <div class="form-input marbt0" id="district">
-                <label>Quận/huyện</label>
-                <select name="name_district" class="input">
-                    <option value="Quận 1">Quận 1</option>
-                </select>
-            </div>
-            <div class="form-input marbt0" id="cities">
-                <label>Tỉnh/Thành</label>
-                <select name="name_cities" class="input">
-                    <option value="Hà Nội">Hà Nội</option>
-                </select>
+    <div class="address-data">
+        <div class="form-input-radio">
+            <input id="address-default" type="radio" name="address-default" checked="">
+            <div class="item-radio address-item" for="address-default">
+                <span class="title">
+                    <span class="name">Trang Nguyen,<span class="phone">0904567834</span></span>
+                    <p>124/15 Duong So 5, Phường 17, Quận Gò Vấp, Thành Phố Hồ Chí Minh</p>
+                </span>
+                <span class="default">Mặc định</span>
+                <a class="change-address">Thay đổi</a>
             </div>
         </div>
     </div>
@@ -538,6 +522,128 @@
         </div>
     </div>
 </footer>
+
+<!--Popup-->
+<div class="bg-black-opacity hidden"></div>
+<div class="popup popup-address hidden">
+    <div class="head-popup">
+        <h2>Địa chỉ của bạn</h2>
+        <span class="close">
+            <img src="images/checkout/close.svg" alt=""/>
+        </span>
+    </div>
+    <div class="main">
+        <div class="address-data">
+            <div class="form-input-radio">
+                <input id="address-choose-1" type="radio" name="address-choose" checked="">
+                <div class="item-radio address-item-popup" for="address-choose-1">
+                    <span class="title">
+                        <span class="name">Trang Nguyen <span class="default">Mặc định</span></span>
+                        <span class="data">
+                            <span>Địa chỉ:</span>295 Khu Pho 3, Ha Huy Giap, Phuong Thanh Loc, Quan 12, Phường Thạnh Lộc, Quận 12, Hồ Chí Minh</span>
+                        <span class="data">
+                            <span>Điện thoại:</span>0904567834</span>
+                    </span>
+                    <a class="update-address">Cập nhật</a>
+                </div>
+            </div>
+            <div class="form-input-radio">
+                <input id="address-choose-2" type="radio" name="address-choose">
+                <div class="item-radio address-item-popup" for="address-choose-2">
+                    <span class="title">
+                        <span class="name">Trang Nguyen</span>
+                        <span class="data">
+                            <span>Địa chỉ:</span>295 Khu Pho 3, Ha Huy Giap, Phuong Thanh Loc, Quan 12, Phường Thạnh Lộc, Quận 12, Hồ Chí Minh</span>
+                        <span class="data">
+                            <span>Điện thoại:</span>0904567834</span>
+                    </span>
+                    <a class="update-address">Cập nhật</a>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="button marbt20 add-new-address">
+            <img src="images/checkout/plus.svg" alt=""/>
+            Thêm địa chỉ mới
+        </button>
+    </div>
+    <div class="bottom">
+        <button type="button" class="cancel">Hủy</button>
+        <button type="button" class="apply">Xác nhận</button>
+    </div>
+</div>
+
+<div class="popup popup-add-address hidden">
+    <div class="head-popup">
+        <h2>Thêm địa chỉ mới</h2>
+        <span class="close">
+            <img src="images/checkout/close.svg" alt=""/>
+        </span>
+    </div>
+    <div class="main">
+        <div class="column">
+            <div class="form-input marbt25">
+                <label>Họ và tên <span>*</span></label>
+                <input title="Họ và tên" placeholder="User name" class="input" type="text" name="username">
+            </div>
+            <div class="form-input marbt25">
+                <label>Số điện thoại</label>
+                <input title="phone" placeholder="Nhập điện thoại" class="input" type="text" name="phone">
+            </div>
+        </div>
+        <div class="column">
+            <div class="form-input marbt25" id="district">
+                <label>Quận/huyện</label>
+                <select name="name_district" class="input">
+                    <option value="Quận 1">Quận 1</option>
+                </select>
+            </div>
+            <div class="form-input marbt25" id="cities">
+                <label>Tỉnh/Thành</label>
+                <select name="name_cities" class="input">
+                    <option value="Hà Nội">Hà Nội</option>
+                </select>
+            </div>
+        </div>
+        <div class="column">
+            <div class="form-input marbt25" id="ward">
+                <label>Phường/xã</label>
+                <select name="name_district" class="input">
+                    <option value="Phường 19">Phường 19</option>
+                </select>
+            </div>
+            <div class="form-input marbt25" id="address">
+                <label>Địa chỉ</label>
+                <input title="address" placeholder="Nhập địa chỉ" class="input" type="text" name="address" />
+            </div>
+        </div>
+        <div class="map marbt20">
+            <img src="images/checkout/map.jpg" alt=""/>
+        </div>
+        <div class="address-type marbt20">
+            <div class="form-input-radio">
+                <input type="radio" value="Nhà riêng / Căn hộ" name="address-type" checked>
+                <div class="item-radio">
+                    Nhà riêng / Căn hộ
+                </div>
+            </div>
+            <div class="form-input-radio">
+                <input type="radio" value="Đại lý / Công ty" name="address-type">
+                <div class="item-radio">
+                    Đại lý / Công ty
+                </div>
+            </div>
+        </div>
+        <div class="marbt20">
+            <div class="form-input-checkbox">
+                <input type="checkbox" name="check-default" class="input-check" checked>
+                <h3>Sử dụng địa chỉ này làm mặc định</h3>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <button type="button" class="save">Lưu</button>
+    </div>
+</div>
 
 <!--Jquery-->
 <script src="js/common/jquery.js"></script>
