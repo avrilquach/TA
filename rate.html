@@ -15,7 +15,13 @@
 
     </div>
     <div class="upload">
-        <input type="file" class="upload-rate" name="upload-rate" accept="image/*" capture="camera" />
+        <input
+                type="file"
+                id="file-upload"
+                accept="image/*"
+                capture
+                @change="setImage"
+        />
     </div>
 </div>
 <!--Jquery-->
