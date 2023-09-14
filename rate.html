@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ĐÁNH GIÁ</title>
+    <link rel="icon" href="design/themes/bright_theme/media/tatmart/images/home/fav.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/rate.css">
+</head>
+
+<body class="rate-page">
+<!-- Header -->
+<header class="header2">
+    <a class="back" href="product.html">
+        <img src="design/themes/bright_theme/media/tatmart/images/category/back.svg" alt=""/>
+    </a>
+    <h1>Đánh giá</h1>
+</header>
+<!--Main-->
+<div class="main-mobile">
+    <form class="form" action="product.html" method="post">
+        <div class="top">
+            <div class="rate-product">
+                <div class="name-product">
+                    <div class="img">
+                        <img class="main" src="design/themes/bright_theme/media/tatmart/images/home/product.png" alt="hình ảnh" />
+                    </div>
+                    <div class="text">
+                        <span class="title">Dây đèn LED trang trí dài 5m, 20 bóng tròn dùng pin</span>
+                        <span class="type">Phân loại:  ngăn màu cam</span>
+                    </div>
+                </div>
+                <div class="rate-text">
+                    <span class="text">Cực kỳ hài lòng</span>
+                    <span class="user-rating" id="user-rating-1">
+                        <input type="radio" name="rating" value="5"><span class="star"></span>
+                        <input type="radio" name="rating" value="4"><span class="star"></span>
+                        <input type="radio" name="rating" value="3"><span class="star"></span>
+                        <input type="radio" name="rating" value="2"><span class="star"></span>
+                        <input type="radio" name="rating" value="1"><span class="star"></span>
+                    </span>
+                </div>
+                <div class="container">
+                    <ul>
+                        <li>Tay nghề cao</li>
+                        <li>Tác phong chuyên nghiệp</li>
+                        <li>Thân thiện</li>
+                        <li>Cẩn thận tỉ mỉ</li>
+                        <li>Nhanh nhẹn</li>
+                    </ul>
+                    <textarea class="textarea" placeholder="Ý kiến khác"></textarea>
+                    <div class="images">
+                        <h2>Hình ảnh</h2>
+                        <div class="inner">
+                            <div class="list-images">
+
+                            </div>
+                            <div class="upload">
+                                <img src="design/themes/bright_theme/media/tatmart/images/rate/upload.svg" alt="upload hình ảnh đánh giá"/>
+                                <input type="file" class="upload-rate" name="upload-rate" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rate-product">
+                <div class="name-product">
+                    <div class="img">
+                        <img class="main" src="design/themes/bright_theme/media/tatmart/images/home/product.png" alt="hình ảnh" />
+                    </div>
+                    <span class="text">
+                        <span class="title">Dây đèn LED trang trí dài 5m, 20 bóng tròn dùng pin</span>
+                        <span class="type">Phân loại:  ngăn màu cam</span>
+                    </span>
+                </div>
+                <div class="rate-text">
+                    <span class="text">Cực kỳ hài lòng</span>
+                    <span class="user-rating" id="user-rating-2">
+                        <input type="radio" name="rating" value="5"><span class="star"></span>
+                        <input type="radio" name="rating" value="4"><span class="star"></span>
+                        <input type="radio" name="rating" value="3"><span class="star"></span>
+                        <input type="radio" name="rating" value="2"><span class="star"></span>
+                        <input type="radio" name="rating" value="1"><span class="star"></span>
+                    </span>
+                </div>
+                <div class="container">
+                    <ul>
+                        <li>Tay nghề cao</li>
+                        <li>Tác phong chuyên nghiệp</li>
+                        <li>Thân thiện</li>
+                        <li>Cẩn thận tỉ mỉ</li>
+                        <li>Nhanh nhẹn</li>
+                    </ul>
+                    <textarea class="textarea" placeholder="Ý kiến khác"></textarea>
+                    <div class="images">
+                        <h2>Hình ảnh</h2>
+                        <div class="inner">
+                            <div class="list-images">
+
+                            </div>
+                            <div class="upload">
+                                <img src="design/themes/bright_theme/media/tatmart/images/rate/upload.svg" alt="upload hình ảnh đánh giá"/>
+                                <input type="file" class="upload-rate" name="upload-rate" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <button type="button" class="send-rate" >Gửi đánh giá</button>
+            <a class="remove-rate">Bỏ qua đánh giá</a>
+        </div>
+    </form>
+</div>
+<div class="bg-black-opacity hidden"></div>
+<!-- Popup Deny -->
+<div class="popup popup-deny">
+    <div class="head">
+        <span class="close">
+             <img src="design/themes/bright_theme/media/tatmart/images/information-account/close.svg" alt="close">
+        </span>
+        <h2></h2>
+    </div>
+    <div class="main">
+        <span>Bạn có chắc muốn rời khỏi trang đánh giá này không?</span>
+        <p>Lưu ý: Đơn hàng chỉ có thể đánh giá trong vòng 7 ngày<br/>kể từ lúc đơn hàng được giao thành công.</p>
+    </div>
+    <div class="end">
+        <a class="btn-rate" href="rate.html">Ở lại</a>
+        <a class="btn-product" href="product.html">Xác nhận</a>
+    </div>
+</div>
+
+<!-- Popup Success -->
+<div class="popup popup-success">
+    <div class="head">
+        <span class="close">
+             <img src="design/themes/bright_theme/media/tatmart/images/information-account/close.svg" alt="close">
+        </span>
+        <h2></h2>
+    </div>
+    <div class="main">
+        <img src="design/themes/bright_theme/media/tatmart/images/rate/success.svg" alt="Đánh giá thành công">
+        <p>Đánh giá thành công. Cảm ơn bạn đã trải <br/> nghiệm mua sắm tại <span>TATmart</span> !</p>
+    </div>
+    <div class="bottom">
+        <a href="index.html" class="submit">Quay về trang chủ</a>
+    </div>
+</div>
+
+<!--Jquery-->
+<script src="js/rate.js"></script>
+</body>
+
+</html>
