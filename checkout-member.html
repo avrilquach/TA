@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>THANH TOÁN</title>
-    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/scrollbar.css">
     <link rel="stylesheet" href="css/reponsive.css">
 </head>
@@ -21,17 +21,19 @@
         <div class="center hidden-mobile">
             <div class="menu">
                 <ul>
-                    <li><a href="#">Seating</a></li>
-                    <li><a href="#">Table</a></li>
-                    <li><a href="#">Workspace</a></li>
-                    <li><a href="#">Accessories</a></li>
+                    <li data-menu="menu-seating"><a>Seating</a></li>
+                    <li data-menu="menu-table"><a>Table</a></li>
+                    <li data-menu="menu-workspace"><a>Workspace</a></li>
+                    <li data-menu="menu-accessories"><a>Accessories</a></li>
                     <li><a href="#">Khuyến mãi</a></li>
                 </ul>
             </div>
         </div>
         <div class="right">
             <div class="search">
-                <img src="images/checkout/search.svg" alt=""/>
+                <div class="open-search">
+                    <span class="icon"></span>
+                </div>
             </div>
             <div class="cart">
                 <img src="images/checkout/cart.svg" alt=""/>
@@ -42,6 +44,12 @@
                     <img src="images/checkout/account.svg" alt=""/>
                     <img src="images/checkout/arrow-up.svg" alt=""/>
                 </div>
+                <div class="dropdown-account">
+                    <ul>
+                        <li class="login"><a href="login.html">Đăng nhập</a></li>
+                        <li class="signup"><a href="signup.html">Đăng ký</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="menu hidden-desktop">
                 <span class="open"></span>
@@ -49,6 +57,40 @@
         </div>
     </div>
 </header>
+<!-- Menu Desktop -->
+<div class="menu-desktop">
+    <div id="menu-seating" class="menu-item hidden">
+        <div class="left">
+            <ul class="links">
+                <li>
+                    <a data-img="">Task</a>
+                </li>
+                <li>
+                    <a data-img="">Multi-purpose and guest</a>
+                </li>
+                <li>
+                    <a data-img="">Executive</a>
+                </li>
+                <li>
+                    <a data-img="">Lounge</a>
+                </li>Task
+                <li>
+                    <a data-img="">Stools and bar stools</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+
+        </div>
+    </div>
+</div>
+<!-- Form Search -->
+<form class="form-search">
+    <input type="search" class="input-search" name="search"/>
+    <button type="submit" >
+        <img src="images/checkout/search.svg" alt=""/>
+    </button>
+</form>
 <!-- Menu Mobile -->
 <div class="overlay hidden"></div>
 <div class="menu-mobile hidden-desktop">
@@ -154,7 +196,7 @@
                 </li>
             </ul>
         </div>
-        <div class="content padbottom0_3">
+        <div class="content padbottom0_4">
             <div class="m-left">
                 <!--Address-->
                 <div class="checkout-item">
@@ -451,7 +493,7 @@
     </div>
 </div>
 <!--Footer-->
-<footer class="footer padding3_0">
+<footer class="footer padding4_0">
     <div class="wrapper">
         <div class="top">
             <div class="left">
