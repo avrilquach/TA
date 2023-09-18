@@ -33,7 +33,7 @@
             let type = event.target.files[0].type
             let type_arr = ["image/jpeg","image/png"];
 	        reader.readAsDataURL(event.target.files[0]);
-            alert(type);
+            alert(event.target.files[0]);
         }
     })
 </script>
