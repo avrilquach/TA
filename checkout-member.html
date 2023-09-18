@@ -11,86 +11,168 @@
 
 <body class="checkout-page">
 <!--Header-->
-<header class="header header-mobile">
-    <div class="wrapper">
-        <div class="left">
-            <a class="logo" href="/">
-                <img src="images/checkout/logo.svg" alt=""/>
-            </a>
-        </div>
-        <div class="center hidden-mobile">
-            <div class="menu">
-                <ul>
-                    <li data-menu="menu-seating"><a>Seating</a></li>
-                    <li data-menu="menu-table"><a>Table</a></li>
-                    <li data-menu="menu-workspace"><a>Workspace</a></li>
-                    <li data-menu="menu-accessories"><a>Accessories</a></li>
-                    <li><a href="#">Khuyến mãi</a></li>
-                </ul>
+<div id="header-desktop">
+    <header class="header header-mobile">
+        <div class="wrapper">
+            <div class="left">
+                <a class="logo" href="/">
+                    <img src="images/checkout/logo.svg" alt=""/>
+                </a>
             </div>
-        </div>
-        <div class="right">
-            <div class="search">
-                <div class="open-search">
-                    <span class="icon"></span>
-                </div>
-            </div>
-            <div class="cart">
-                <img src="images/checkout/cart.svg" alt=""/>
-                <span>5</span>
-            </div>
-            <div class="account">
-                <div class="open-account">
-                    <img src="images/checkout/account.svg" alt=""/>
-                    <img src="images/checkout/arrow-up.svg" alt=""/>
-                </div>
-                <div class="dropdown-account">
+            <div class="center hidden-mobile">
+                <div class="menu">
                     <ul>
-                        <li class="login"><a href="login.html">Đăng nhập</a></li>
-                        <li class="signup"><a href="signup.html">Đăng ký</a></li>
+                        <li data-menu="menu-seating"><a>Seating</a></li>
+                        <li data-menu="menu-table"><a>Table</a></li>
+                        <li data-menu="menu-workspace"><a>Workspace</a></li>
+                        <li data-menu="menu-accessories"><a>Accessories</a></li>
+                        <li><a href="#">Khuyến mãi</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="menu hidden-desktop">
-                <span class="open"></span>
+            <div class="right">
+                <div class="search">
+                    <div class="open-search">
+                        <span class="icon"></span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <img src="images/checkout/cart.svg" alt=""/>
+                    <span>5</span>
+                </div>
+                <div class="account">
+                    <div class="open-account">
+                        <img src="images/checkout/account.svg" alt=""/>
+                        <img src="images/checkout/arrow-up.svg" alt=""/>
+                    </div>
+                    <div class="dropdown-account">
+                        <ul>
+                            <li class="login"><a href="login.html">Đăng nhập</a></li>
+                            <li class="signup"><a href="signup.html">Đăng ký</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu hidden-desktop">
+                    <span class="open"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Menu Desktop -->
+    <div class="menu-desktop hidden-mobile">
+        <div id="menu-seating" class="menu-item hidden">
+            <div class="left">
+                <ul class="links">
+                    <li>
+                        <a data-img="images/home/menu/menu-banner1.jpg">Task</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner2.jpg">Multi-purpose and guest</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner3.jpg">Executive</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner4.jpg">Lounge</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner1.jpg">Stools and bar stools</a>
+                    </li>
+                </ul>
+                <ul class="links">
+                    <li>
+                        <a data-img="images/home/menu/menu-banner1.jpg">Task</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner2.jpg">Multi-purpose and guest</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner3.jpg">Executive</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner4.jpg">Lounge</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner1.jpg">Stools and bar stools</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="images/home/menu/menu-banner1.jpg" alt="Task"/>
+            </div>
+        </div>
+        <div id="menu-table" class="menu-item hidden">
+            <div class="left">
+                <ul class="links">
+                    <li>
+                        <a data-img="images/home/menu/menu-banner1.jpg">Task</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner2.jpg">Multi-purpose and guest</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner3.jpg">Executive</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner4.jpg">Lounge</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="images/home/menu/menu-banner1.jpg" alt="Task"/>
+            </div>
+        </div>
+        <div id="menu-workspace" class="menu-item hidden">
+            <div class="left">
+                <ul class="links">
+                    <li>
+                        <a data-img="images/home/menu/menu-banner1.jpg">Task</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner2.jpg">Multi-purpose and guest</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner3.jpg">Executive</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner4.jpg">Lounge</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner1.jpg">Stools and bar stools</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="images/home/menu/menu-banner1.jpg" alt="Task"/>
+            </div>
+        </div>
+        <div id="menu-accessories" class="menu-item hidden">
+            <div class="left">
+                <ul class="links">
+                    <li>
+                        <a data-img="images/home/menu/menu-banner1.jpg">Task</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner2.jpg">Multi-purpose and guest</a>
+                    </li>
+                    <li>
+                        <a data-img="images/home/menu/menu-banner3.jpg">Executive</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="images/home/menu/menu-banner1.jpg" alt="Task"/>
             </div>
         </div>
     </div>
-</header>
-<!-- Menu Desktop -->
-<div class="menu-desktop">
-    <div id="menu-seating" class="menu-item hidden">
-        <div class="left">
-            <ul class="links">
-                <li>
-                    <a data-img="">Task</a>
-                </li>
-                <li>
-                    <a data-img="">Multi-purpose and guest</a>
-                </li>
-                <li>
-                    <a data-img="">Executive</a>
-                </li>
-                <li>
-                    <a data-img="">Lounge</a>
-                </li>Task
-                <li>
-                    <a data-img="">Stools and bar stools</a>
-                </li>
-            </ul>
-        </div>
-        <div class="right">
-
-        </div>
-    </div>
+    <!-- Form Search -->
+    <form class="form-search">
+        <input type="search" class="input-search" name="search"/>
+        <button type="submit" >
+            <img src="images/checkout/search.svg" alt=""/>
+        </button>
+    </form>
 </div>
-<!-- Form Search -->
-<form class="form-search">
-    <input type="search" class="input-search" name="search"/>
-    <button type="submit" >
-        <img src="images/checkout/search.svg" alt=""/>
-    </button>
-</form>
 <!-- Menu Mobile -->
 <div class="overlay hidden"></div>
 <div class="menu-mobile hidden-desktop">
@@ -292,7 +374,7 @@
             <div class="m-right">
                 <!--Products-->
                 <div class="checkout-item">
-    <div id="cart-item" class="scrollbar-inner">
+    <div class="cart-item scrollbar-inner">
         <div class="item">
             <div class="img">
                 <img src="images/checkout/product.png" alt="tên sản phẩm">
@@ -684,6 +766,191 @@
     </div>
     <div class="bottom">
         <button type="button" class="save">Lưu</button>
+    </div>
+</div>
+
+<!--Cart-->
+<div class="sec-cart hidden">
+    <div class="head-cart">
+        <h2>Giỏ hàng</h2>
+        <span class="close">
+            <img src="images/checkout/close.svg" alt="">
+        </span>
+    </div>
+    <div class="main">
+        <div class="cart-item scrollbar-inner marginbt1">
+            <div class="item">
+                <div class="img">
+                    <img src="images/checkout/product.png" alt="tên sản phẩm">
+                </div>
+                <div class="text">
+                    <span class="title-product">Cosm Low Back Chair</span>
+                    <span class="price">
+                    <span class="new">
+                        <span class="price-value">260.000</span>
+                        <span class="price-value">đ</span>
+                    </span>
+                    <span class="price-old">
+                        <span class="price-value">49.280.000</span>
+                        <span class="price-value">đ</span>
+                    </span>
+                </span>
+                    <span class="display-number">
+                <div class="value">
+                    <span class="minus">
+                         <img src="images/checkout/minus.svg" alt="trừ đi sản phẩm">
+                    </span>
+                    <input title="number" type="text" value="1" name="number" class="number">
+                    <span class="plus">
+                         <img src="images/checkout/add.svg" alt="cộng thêm sản phẩm">
+                    </span>
+                </div>
+            </span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="images/checkout/product.png" alt="tên sản phẩm">
+                </div>
+                <div class="text">
+                    <span class="title-product">Cosm Low Back Chair</span>
+                    <span class="price">
+                    <span class="new">
+                        <span class="price-value">260.000</span>
+                        <span class="price-value">đ</span>
+                    </span>
+                    <span class="price-old">
+                        <span class="price-value">49.280.000</span>
+                        <span class="price-value">đ</span>
+                    </span>
+                </span>
+                    <span class="display-number">
+                <div class="value">
+                    <span class="minus">
+                         <img src="images/checkout/minus.svg" alt="trừ đi sản phẩm">
+                    </span>
+                    <input title="number" type="text" value="1" name="number" class="number">
+                    <span class="plus">
+                         <img src="images/checkout/add.svg" alt="cộng thêm sản phẩm">
+                    </span>
+                </div>
+            </span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="images/checkout/product.png" alt="tên sản phẩm">
+                </div>
+                <div class="text">
+                    <span class="title-product">Cosm Low Back Chair</span>
+                    <span class="price">
+                    <span class="new">
+                        <span class="price-value">260.000</span>
+                        <span class="price-value">đ</span>
+                    </span>
+                    <span class="price-old">
+                        <span class="price-value">49.280.000</span>
+                        <span class="price-value">đ</span>
+                    </span>
+                </span>
+                    <span class="display-number">
+                <div class="value">
+                    <span class="minus">
+                         <img src="images/checkout/minus.svg" alt="trừ đi sản phẩm">
+                    </span>
+                    <input title="number" type="text" value="1" name="number" class="number">
+                    <span class="plus">
+                         <img src="images/checkout/add.svg" alt="cộng thêm sản phẩm">
+                    </span>
+                </div>
+            </span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="images/checkout/product.png" alt="tên sản phẩm">
+                </div>
+                <div class="text">
+                    <span class="title-product">Cosm Low Back Chair</span>
+                    <span class="price">
+                    <span class="new">
+                        <span class="price-value">260.000</span>
+                        <span class="price-value">đ</span>
+                    </span>
+                    <span class="price-old">
+                        <span class="price-value">49.280.000</span>
+                        <span class="price-value">đ</span>
+                    </span>
+                </span>
+                    <span class="display-number">
+                <div class="value">
+                    <span class="minus">
+                         <img src="images/checkout/minus.svg" alt="trừ đi sản phẩm">
+                    </span>
+                    <input title="number" type="text" value="1" name="number" class="number">
+                    <span class="plus">
+                         <img src="images/checkout/add.svg" alt="cộng thêm sản phẩm">
+                    </span>
+                </div>
+            </span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="images/checkout/product.png" alt="tên sản phẩm">
+                </div>
+                <div class="text">
+                    <span class="title-product">Cosm Low Back Chair</span>
+                    <span class="price">
+                    <span class="new">
+                        <span class="price-value">260.000</span>
+                        <span class="price-value">đ</span>
+                    </span>
+                    <span class="price-old">
+                        <span class="price-value">49.280.000</span>
+                        <span class="price-value">đ</span>
+                    </span>
+                </span>
+                    <span class="display-number">
+                <div class="value">
+                    <span class="minus">
+                         <img src="images/checkout/minus.svg" alt="trừ đi sản phẩm">
+                    </span>
+                    <input title="number" type="text" value="1" name="number" class="number">
+                    <span class="plus">
+                         <img src="images/checkout/add.svg" alt="cộng thêm sản phẩm">
+                    </span>
+                </div>
+            </span>
+                </div>
+            </div>
+        </div>
+        <div class="payment-detail marginbt1">
+            <div class="inner">
+                <div class="item">
+                    <span class="label">Tạm tính</span>
+                    <span class="value">
+                        <span class="price-value">517.000</span>
+                        <span class="price-value">đ</span>
+                    </span>
+                </div>
+                <div class="item">
+                    <span class="label">Phí vận chuyển</span>
+                    <span class="value">
+                        <span class="price-value">19.000</span>
+                        <span class="price-value">đ</span>
+                    </span>
+                </div>
+            </div>
+            <div class="total">
+                <span class="label">Tổng cộng</span>
+                <span class="value">
+                    <span class="price-value">400.000</span>
+                    <span class="price-value">đ</span>
+                </span>
+            </div>
+        </div>
+        <a href="#" class="submit">Thanh toán</a>
     </div>
 </div>
 
