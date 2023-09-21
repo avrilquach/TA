@@ -1,0 +1,77 @@
+{
+  "color1" :
+  [
+    {
+      "big": "images/product/product-big.jpg",
+      "thumb": "images/product/product-thumbnail.jpg"
+    }
+  ],
+  "color2" :
+  [
+    {
+      "big": "images/product/product-big.jpg",
+      "thumb": "images/product/product-thumbnail.jpg"
+    },
+    {
+      "big": "images/product/product-big.jpg",
+      "thumb": "images/product/product-thumbnail.jpg"
+    }
+  ],
+  "color3" :
+  [
+    {
+      "big": "images/product/product-big.jpg",
+      "thumb": "images/product/product-thumbnail.jpg"
+    },
+    {
+      "big": "images/product/product-big.jpg",
+      "thumb": "images/product/product-thumbnail.jpg"
+    },
+    {
+      "big": "images/product/product-big.jpg",
+      "thumb": "images/product/product-thumbnail.jpg"
+    }
+  ],
+  "color4" :
+  [
+    {
+      "big": "images/product/product-big.jpg",
+      "thumb": "images/product/product-thumbnail.jpg"
+    },
+    {
+      "big": "images/product/product-big.jpg",
+      "thumb": "images/product/product-thumbnail.jpg"
+    },
+    {
+      "big": "images/product/product-big.jpg",
+      "thumb": "images/product/product-thumbnail.jpg"
+    },
+    {
+      "big": "images/product/product-big.jpg",
+      "thumb": "images/product/product-thumbnail.jpg"
+    }
+  ],
+  "color5" :
+  [
+    {
+      "big": "images/product/product-big.jpg",
+      "thumb": "images/product/product-thumbnail.jpg"
+    },
+    {
+      "big": "images/product/product-big.jpg",
+      "thumb": "images/product/product-thumbnail.jpg"
+    },
+    {
+      "big": "images/product/product-big.jpg",
+      "thumb": "images/product/product-thumbnail.jpg"
+    },
+    {
+      "big": "images/product/product-big.jpg",
+      "thumb": "images/product/product-thumbnail.jpg"
+    },
+    {
+      "big": "images/product/product-big.jpg",
+      "thumb": "images/product/product-thumbnail.jpg"
+    }
+  ]
+}
