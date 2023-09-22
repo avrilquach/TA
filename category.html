@@ -178,17 +178,32 @@
     <div class="sec-filter padding3_0">
         <div class="container">
             <div class="wrapper-inner">
-                <h1>Seating <span class="number">(15 Sản Phẩm)</span></h1>
+                <h1 class="hidden-mobile">Seating <span class="number">(15 Sản Phẩm)</span></h1>
                 <ul>
                     <li data-id="all" class="active" data-title="All" data-number="1000">All</li>
                     <li data-id="seating" data-title="Seating" data-number="250">Seating</li>
                     <li data-id="table" data-title="Table & Desks" data-number="300">Table & Desks</li>
                     <li data-id="beds" data-title="Beds" data-number="350">Beds</li>
-                    <li data-id="storages" data-title="Storages" data-number="500">Storages</li>
-                    <li data-id="decor" data-title="Decor" data-number="100">Decor</li>
+                    <li class="hidden-mobile" data-id="storages" data-title="Storages" data-number="500">Storages</li>
+                    <li class="hidden-mobile" data-id="decor" data-title="Decor" data-number="100">Decor</li>
+                    <li class="hidden-mobile" data-id="accessories" data-title="Accessories" data-number="100">Accessories</li>
                 </ul>
+                <div class="hidden-desktop">
+                    <div class="open-filter-mobile">
+                        <img src="images/category/menu-filter.svg" alt="filter">
+                        <ul>
+                            <li data-id="storages" data-title="Storages" data-number="500">Storages</li>
+                            <li data-id="decor" data-title="Decor" data-number="100">Decor</li>
+                            <li data-id="accessories" data-title="Accessories" data-number="100">Accessories</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    <!--Total Products-->
+    <div class="container hidden-desktop">
+        <h2 class="total-products marginbt2">15 Sản Phẩm</h2>
     </div>
     <!--Products-->
     <div class="sec-product grid-4" id="product-all">
@@ -612,6 +627,8 @@
                 <a class="btn-primary" href="#"><span>Load more</span></a>
             </div>
         </div>
+    </div>
+    <div class="sec-product grid-4 hidden" id="product-accessories">
     </div>
     <!--Sản phẩm đã xem-->
     <div class="sec-product-viewer padding4_0 sec-product">
