@@ -548,7 +548,7 @@ h1, h2, h3, h4 {
   width: 90%;
 }
 .cart-item .item .text .sku {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   color: #A4A4A4;
   margin-bottom: 10px;
@@ -620,10 +620,22 @@ h1, h2, h3, h4 {
 }
 .login-page .main .img img {
   width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 .login-page .main .content {
   width: 50%;
   position: relative;
+}
+.login-page .main .content .head2 h1 {
+  color: black;
+  font-weight: 600;
+  font-size: 30px;
+}
+.login-page .main .content .head2 p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3E4B5E;
 }
 .login-page .main .content .head {
   display: flex;
