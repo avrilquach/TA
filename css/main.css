@@ -559,11 +559,10 @@ input[type=search]::-webkit-search-results-decoration {
 }
 .header .wrapper .center .menu ul li.sub ul.style {
   grid-template-columns: repeat(2, 1fr);
-  min-width: 560px;
   align-items: flex-start;
 }
 .header .wrapper .center .menu ul li.sub ul.style li:nth-child(odd)  {
-  padding-right: 1rem;
+  padding-right: 2rem;
 }
 .header .wrapper .center .menu ul li.sub ul li {
   padding: 10px 0;

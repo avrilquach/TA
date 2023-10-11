@@ -12,6 +12,9 @@
   .sec-solution .headding h2{
     font-size: 35px;
   }
+  .header .wrapper .center .menu ul li.sub ul.style {
+    width: 720px !important;
+  }
 }
 @media (min-width: 1200px) {
   .wrapper {
@@ -54,6 +57,9 @@
   .slider .owl-carousel .owl-stage-outer .owl-stage .owl-item img {
     height: 100vh;
     object-fit: cover;
+  }
+  .header .wrapper .center .menu ul li.sub ul.style {
+    width: 560px;
   }
 }
 @media (max-width: 1199.98px) {
