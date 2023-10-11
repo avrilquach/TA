@@ -34,7 +34,9 @@ blockquote:before, blockquote:after, q:before, q:after {
   content: "";
   content: none;
 }
-
+::placeholder {
+  color: red;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -73,7 +75,7 @@ strong {
 }
 
 body {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Nunito", sans-serif;
   width: 100%;
 }
 
@@ -292,7 +294,7 @@ input[type=search]::-webkit-search-results-decoration {
 .form-input .input {
   width: 100%;
   border: 1px solid #ADADAD;
-  height: 54px;
+  height: 45px;
   border-radius: 5px;
   padding: 10px;
   background: white;
@@ -300,7 +302,7 @@ input[type=search]::-webkit-search-results-decoration {
   font-size: 16px;
   font-weight: 400;
   color: #424B5A;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Nunito", Arial, sans-serif;
   outline: none;
 }
 .form-input .input:focus {
@@ -310,7 +312,7 @@ input[type=search]::-webkit-search-results-decoration {
   font-size: 16px;
   font-weight: 400;
   color: #808080;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Nunito", Arial, sans-serif;
 }
 .form-input .delete {
   position: absolute;
@@ -325,18 +327,17 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 button[type=button], button[type=submit] {
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Nunito", Arial, sans-serif;
   cursor: pointer;
 }
-
 .submit {
   width: 100%;
-  background: #FF9900;
+  background: #424B5A;
   font-size: 16px;
   font-weight: 600;
   color: white;
   border-radius: 5px;
-  height: 54px;
+  height: 45px;
   border: none;
   cursor: pointer;
   display: flex;
@@ -344,7 +345,9 @@ button[type=button], button[type=submit] {
   justify-content: center;
   text-decoration: none;
 }
-
+.submit:hover{
+  background: #d93434;
+}
 .btn-primary {
   position: relative;
   display: block;
@@ -496,7 +499,7 @@ h1, h2, h3, h4 {
   opacity: 1 !important;
 }
 .cart-item .scroll-bar {
-  background-color: #FF9900 !important;
+  background-color: #424B5A !important;
   opacity: 1 !important;
 }
 .cart-item .item {
@@ -628,8 +631,8 @@ h1, h2, h3, h4 {
   position: relative;
 }
 .login-page .main .content .head2 h1 {
-  color: black;
-  font-weight: 600;
+  color: #000;
+  font-weight: 500;
   font-size: 30px;
 }
 .login-page .main .content .head2 p {
@@ -654,7 +657,7 @@ h1, h2, h3, h4 {
   color: #8D8D8D;
 }
 .login-page .main .content .head .links a {
-  color: #FF9900;
+  color: #0078e9;
   text-decoration: none;
 }
 .login-page .main .content .inner {
@@ -668,7 +671,7 @@ h1, h2, h3, h4 {
   text-align: right;
   font-size: 13px;
   font-weight: 400;
-  color: #FF9900;
+  color: #0078e9;
   text-decoration: none;
   display: block;
 }
@@ -692,7 +695,7 @@ h1, h2, h3, h4 {
   border-radius: 9px;
   font-size: 16px;
   font-weight: 400;
-  background: #E9F1FF;
+  background: #f5f5f5;
   text-decoration: none;
   color: #424B5A;
 }
