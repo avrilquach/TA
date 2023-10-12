@@ -2895,6 +2895,23 @@ h1, h2, h3, h4 {
 .product-page .main-product .right .button .add-to-cart {
   background: #d93434;
   color: white;
+  position: relative;
+}
+.product-page .main-product .right .button .add-to-cart:before {
+  background-color:hsla(0,0%,100%,.25);
+  content:"";
+  height:100%;
+  opacity:1;
+  position:absolute;
+  right:0;
+  top:0;
+  transition:width 3s ease;
+  width:100%;
+  z-index:-1
+}
+.product-page .main-product .right .button .add-to-cart.is-adding:before {
+  width:0;
+  z-index:1
 }
 .product-page .main-product .right .button .register-member {
   border: 1px solid #424B5A;
