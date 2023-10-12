@@ -181,12 +181,12 @@ $(document).ready(function () {
             });
             $(".product-page .add-to-cart").click(function(e){
               $(this).addClass("is-adding");
-              $(this).delay(3000).queue(function(){
+              $(this).delay(1000).queue(function(){
                   $(this).removeClass("is-adding").dequeue();
               });
                setTimeout(function() {
                     $(".bg-black-opacity").removeClass("hidden");
                     $(".sec-cart").removeClass("hidden");
-                }, 3000);
+                }, 1000);
             });
     });
