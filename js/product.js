@@ -184,9 +184,7 @@ $(document).ready(function () {
               $(this).delay(1000).queue(function(){
                   $(this).removeClass("is-adding").dequeue();
               });
-               setTimeout(function() {
-                    $(".bg-black-opacity").removeClass("hidden");
-                    $(".sec-cart").removeClass("hidden");
-                }, 1000);
+              $(".bg-black-opacity").removeClass("hidden");
+              $(".sec-cart").removeClass("hidden");
             });
     });
