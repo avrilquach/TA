@@ -76,27 +76,27 @@ $(document).ready(function () {
         $(".list-map").css("height", e);
     });
 $(document).ready(function () {
-    let h_mobile = '';
-    if($("#banner-ads").length)
-    {
-      h_mobile = $(window).height() - 150;
-      $(".menu-mobile ul").css("height",h_mobile);
+  let h_mobile = '';
+  if($("#banner-ads").length)
+  {
+    h_mobile = $(window).height() - 150;
+    $(".menu-mobile > ul").css("height",h_mobile);
+  }
+  else
+  {
+    h_mobile = $(window).height() - 72;
+    $(".menu-mobile > ul").css("height",h_mobile);
+  }
+  $(".header .menu .open").click(function (e) {
+    if($(this).hasClass("close")){
+      $("body").css("overflow","hidden");
     }
     else
     {
-      h_mobile = $(window).height() - 72;
-      $(".menu-mobile ul").css("height",h_mobile);
-    }
-    $(".header .menu .open").click(function (e) {
-      if($(this).hasClass("close")){
-        $("body").css("overflow","hidden");
-      }
-      else
-      {
-        $("body").css("overflow","");
-      }
-    })
-    $(".overlay").click(function (e) {
       $("body").css("overflow","");
-    })
+    }
   })
+  $(".overlay").click(function (e) {
+    $("body").css("overflow","");
+  })
+})

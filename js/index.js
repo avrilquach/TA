@@ -110,29 +110,28 @@ $(document).ready(function () {
                 a.deltaY > 0 ? e.trigger("next.owl") : e.trigger("prev.owl"), a.preventDefault();
             });
     });
-    $(document).ready(function () {
-      let h_mobile = '';
-      if($("#banner-ads").length)
-      {
-        h_mobile = $(window).height() - 150;
-        $(".menu-mobile ul").css("height",h_mobile);
-      }
-      else
-      {
-        h_mobile = $(window).height() - 72;
-        $(".menu-mobile ul").css("height",h_mobile);
-      }
-      $(".header .menu .open").click(function (e) {
-        if($(this).hasClass("close")){
-          $("body").css("overflow","hidden");
-        }
-        else
-        {
-          $("body").css("overflow","");
-        }
-      })
-      $(".overlay").click(function (e) {
-        $("body").css("overflow","");
-      })
-    })
-
+   $(document).ready(function () {
+     let h_mobile = '';
+     if($("#banner-ads").length)
+     {
+       h_mobile = $(window).height() - 150;
+       $(".menu-mobile > ul").css("height",h_mobile);
+     }
+     else
+     {
+       h_mobile = $(window).height() - 72;
+       $(".menu-mobile > ul").css("height",h_mobile);
+     }
+     $(".header .menu .open").click(function (e) {
+       if($(this).hasClass("close")){
+         $("body").css("overflow","hidden");
+       }
+       else
+       {
+         $("body").css("overflow","");
+       }
+     })
+     $(".overlay").click(function (e) {
+       $("body").css("overflow","");
+     })
+   })

@@ -50,12 +50,12 @@ $(document).ready(function () {
   if($("#banner-ads").length)
   {
     h_mobile = $(window).height() - 150;
-    $(".menu-mobile ul").css("height",h_mobile);
+    $(".menu-mobile > ul").css("height",h_mobile);
   }
   else
   {
     h_mobile = $(window).height() - 72;
-    $(".menu-mobile ul").css("height",h_mobile);
+    $(".menu-mobile > ul").css("height",h_mobile);
   }
   $(".header .menu .open").click(function (e) {
     if($(this).hasClass("close")){
@@ -70,4 +70,3 @@ $(document).ready(function () {
     $("body").css("overflow","");
   })
 })
-
