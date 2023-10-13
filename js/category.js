@@ -105,6 +105,17 @@ $(document).ready(function () {
         })
     });
 $(document).ready(function () {
+  let h_mobile = '';
+  if($("#banner-ads").length)
+  {
+    h_mobile = $(window).height() - 150;
+    $(".menu-mobile ul").css("height",h_mobile);
+  }
+  else
+  {
+    h_mobile = $(window).height() - 72;
+    $(".menu-mobile ul").css("height",h_mobile);
+  }
   $(".header .menu .open").click(function (e) {
     if($(this).hasClass("close")){
       $("body").css("overflow","hidden");
