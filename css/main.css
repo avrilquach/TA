@@ -812,13 +812,14 @@ input[type=search]::-webkit-search-results-decoration {
   z-index: 1002;
   height: 100%;
   top: 72px;
-  overflow-y: scroll;
 }
 .menu-mobile.active {
   right: 0;
 }
 .menu-mobile ul {
   padding-top: 1rem;
+  overflow-y: auto;
+  height: 95%;
 }
 .menu-mobile ul li.main {
   padding: 0.5rem 0;
