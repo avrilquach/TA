@@ -817,9 +817,9 @@ input[type=search]::-webkit-search-results-decoration {
   right: 0;
 }
 .menu-mobile ul {
-  padding-top: 1rem;
+  padding: 1rem 0;
   overflow-y: auto;
-  height: 95%;
+  height: calc(100% - 2rem);
 }
 .menu-mobile ul li.main {
   padding: 0.5rem 0;
