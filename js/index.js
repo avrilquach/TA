@@ -110,3 +110,18 @@ $(document).ready(function () {
                 a.deltaY > 0 ? e.trigger("next.owl") : e.trigger("prev.owl"), a.preventDefault();
             });
     });
+    $(document).ready(function () {
+      $(".header .menu .open").click(function (e) {
+        if($(this).hasClass("close")){
+          $("body").css("overflow","hidden");
+        }
+        else
+        {
+          $("body").css("overflow","");
+        }
+      })
+      $(".overlay").click(function (e) {
+        $("body").css("overflow","");
+      })
+    })
+

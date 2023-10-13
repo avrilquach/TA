@@ -75,3 +75,17 @@ $(document).ready(function () {
         let e = $(".map").height() - 300;
         $(".list-map").css("height", e);
     });
+$(document).ready(function () {
+  $(".header .menu .open").click(function (e) {
+    if($(this).hasClass("close")){
+      $("body").css("overflow","hidden");
+    }
+    else
+    {
+      $("body").css("overflow","");
+    }
+  })
+  $(".overlay").click(function (e) {
+    $("body").css("overflow","");
+  })
+})

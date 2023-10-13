@@ -87,3 +87,17 @@ $(document).ready(function () {
                 $("#order-item .tab").removeClass("active"), $("#order-item ." + a).addClass("active"), $(".open-filter-mobile").removeClass("active");
             });
     });
+$(document).ready(function () {
+  $(".header .menu .open").click(function (e) {
+    if($(this).hasClass("close")){
+      $("body").css("overflow","hidden");
+    }
+    else
+    {
+      $("body").css("overflow","");
+    }
+  })
+  $(".overlay").click(function (e) {
+    $("body").css("overflow","");
+  })
+})
