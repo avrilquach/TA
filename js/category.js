@@ -72,7 +72,8 @@ $(document).ready(function () {
         });
 }),
     $(document).ready(function () {
-        new Swiper(".swiper-container", { scrollbar: { el: ".swiper-scrollbar" }, slidesPerView: "auto", paginationClickable: !0, spaceBetween: 30 });
+        new Swiper(".sec-popuplar .swiper-container", { scrollbar: { el: ".swiper-scrollbar-popuplar" }, slidesPerView: "auto", paginationClickable: !0, spaceBetween: 30 }),
+        new Swiper(".sec-product-viewer .swiper-container", { scrollbar: { el: ".swiper-scrollbar-viewer" }, slidesPerView: "auto", paginationClickable: !0, spaceBetween: 30 });
         $(".colors ul li").click(function (e) {
             let a = $(this).data("color");
             $(".product-item").attr("src", a);
