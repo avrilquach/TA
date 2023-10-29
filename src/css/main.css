@@ -1207,7 +1207,7 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 360px;
   }
 
-  .stories .itemt {
+  .stories .item {
     height: 450px;
   }
 
@@ -2152,13 +2152,13 @@ video {
   text-align: center;
 }
 
+.text-\[18px\] {
+  font-size: 18px;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-\[18px\] {
-  font-size: 18px;
 }
 
 .font-medium {
