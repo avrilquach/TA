@@ -497,6 +497,9 @@ img {
 .heading-small .more img {
   margin-left: 10px;
 }
+.news-item:hover h3 {
+  color: #cc0000;
+}
 .news-item img {
   margin-bottom: 10px;
 }
