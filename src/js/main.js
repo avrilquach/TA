@@ -35,4 +35,11 @@ $(document).ready(function(){
   $(".menu-mobile .open").click(function(e){
     $("#navbar-default").toggleClass("hidden");
   })
+  $(".tab-title-news li").click(function(e){
+    $(".tab-title-news li").removeClass("active");
+    $(this).addClass("active");
+    let id = $(this).attr("id");
+    $(".tab-content-news > div").addClass("hidden");
+    $("."+id).removeClass("hidden");
+  });
 });

@@ -1,7 +1,5 @@
 let monthEle = document.querySelector('.month');
 let yearEle = document.querySelector('.year');
-let btnNext = document.querySelector('.btn-next');
-let btnPrev = document.querySelector('.btn-prev');
 let dateEle = document.querySelector('.date-container');
 
 let currentMonth = new Date().getMonth();
@@ -59,27 +57,4 @@ function renderDate() {
         `;
     }
 }
-
-// Xử lý khi ấn vào nút next month
-btnNext.addEventListener('click', function () {
-    if (currentMonth == 11) {
-        currentMonth = 0;
-        currentYear++;
-    } else {
-        currentMonth++;
-    }
-    displayInfo();
-});
-
-// Xử lý khi ấn vào nút previous month
-btnPrev.addEventListener('click', function () {
-    if (currentMonth == 0) {
-        currentMonth = 11;
-        currentYear--;
-    } else {
-        currentMonth--;
-    }
-    displayInfo();
-});
-
 window.onload = displayInfo;
