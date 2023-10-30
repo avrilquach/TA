@@ -127,6 +127,11 @@ input[type="search"]::-webkit-search-results-decoration {
   color: white;
 }
 
+img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .form {
   position: relative;
   width: 150px;
@@ -1322,6 +1327,10 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: bold;
 }
 
+.menu-mobile .nav ul li {
+  margin-right: 20px;
+}
+
 /* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
 
 /*
@@ -2052,10 +2061,6 @@ video {
   width: 100%;
 }
 
-.max-w-screen-xl {
-  max-width: 1280px;
-}
-
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -2146,6 +2151,12 @@ video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
+.bg-\[\#EFEFEF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgba(239, 239, 239, 1);
+  background-color: rgba(239, 239, 239, var(--tw-bg-opacity));
+}
+
 .bg-\[\#cc0000\] {
   --tw-bg-opacity: 1;
   background-color: rgba(204, 0, 0, 1);
@@ -2178,6 +2189,10 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-\[10px\] {
+  padding: 10px;
 }
 
 .py-10 {

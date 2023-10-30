@@ -36,6 +36,10 @@ input[type="search"]::-webkit-search-results-decoration {
   text-transform: uppercase;
   color: white;
 }
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .form {
   position: relative;
   width: 150px;
@@ -1178,4 +1182,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #cc0000;
   font-family: SVN-Avo;
   font-weight: bold;
+}
+.menu-mobile .nav ul li {
+  margin-right: 20px;
 }
