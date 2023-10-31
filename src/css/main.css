@@ -2228,10 +2228,6 @@ video {
   margin-bottom: 5rem;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -2683,6 +2679,10 @@ video {
 
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .lg\:ml-\[50px\] {
