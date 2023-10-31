@@ -675,6 +675,7 @@ img {
 .donate {
   background: url("../pic/bg-donate.png") no-repeat top center;
   height: 750px;
+  background-size: cover;
 }
 .donate h2 {
   font-weight: bold;
@@ -1234,6 +1235,74 @@ img {
 }
 .connect-website ul li a img {
   margin-right: 10px;
+}
+.breadcrumb ul li {
+  margin-right: 20px;
+}
+.breadcrumb ul li a {
+  background: url("../pic/arrow-right.png") no-repeat right center;
+  font-style: italic;
+  font-size: 25px;
+  color: black;
+  padding-right: 30px;
+}
+.breadcrumb ul li:last-child a {
+  background: none;
+}
+.share span {
+  font-style: italic;
+  font-size: 25px;
+  color: black;
+}
+.detail h1 {
+  font-size: 45px;
+  color: black;
+  line-height: 54px;
+}
+.detail p {
+  font-size: 25px;
+  color: black;
+  line-height: 42px;
+}
+.donate-small {
+  background: url("../pic/bg-donate-small.png") no-repeat top center;
+  height: 600px;
+  background-size: cover;
+}
+.donate-small h2 {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 40px;
+  color: white;
+}
+.donate-small .sign {
+  font-family: 'NVN Motherland Signature';
+  font-size: 35px;
+  color: white;
+  display: block;
+}
+.donate-small img {
+  display: block;
+  margin: 0 auto;
+}
+.donate-small .online {
+  width: 200px;
+  height: 52px;
+  border: 1px solid #cc0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
 }
 @media (min-width: 1024px) {
   .donate h2 {
